@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clout-chasers';
+  constructor(private router: Router){
+
+  }
+
+  redirect(address : string){
+    this.router.navigateByUrl("records");
+  }
 }
