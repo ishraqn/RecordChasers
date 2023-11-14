@@ -9,10 +9,9 @@ import { Route, Router } from '@angular/router';
 export class AppComponent {
   title = 'clout-chasers';
   constructor(private router: Router){
-
   }
 
   redirect(address : string){
-    this.router.navigateByUrl("records");
+    this.router.navigateByUrl(address);
   }
 }
