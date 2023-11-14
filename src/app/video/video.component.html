@@ -1,0 +1,15 @@
+
+<div class="video-container">
+    <img [src]="video?.thumbnailURL" alt="Video Thumbnail" class="thumbnail">
+</div>
+
+
+<mat-card>
+    <mat-card-header class="video-title">{{ video?.name }}</mat-card-header>
+    <mat-card-content class="video-details">
+      <p>Uploaded by {{ video?.author?.name }}</p>
+      <p>{{ video?.description }}</p>
+      <p>Views: {{ video?.views }} | Likes: {{ video?.likes }} | Dislikes: {{ video?.dislikes }}</p>
+      </mat-card-content>
+</mat-card>
+  

@@ -5,14 +5,20 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RecordsComponent } from './records/records.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { UploadComponent } from './upload/upload.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SearchComponent } from './search/search.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RecordsComponent,
-    HomePageComponent
+    HomePageComponent,
+    UploadComponent,
+    ProfileComponent,
+    SearchComponent,
+    VideoComponent
   ],
   imports: [
     MatButtonModule,

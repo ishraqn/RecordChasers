@@ -1,1 +1,3 @@
-<p>home-page works!</p>
+<mat-card  *ngFor="let video of videos" (click)="openVideo(video)">
+    <img class="video-container" [src]="video?.thumbnailURL" alt="Video Thumbnail" class="thumbnail">
+</mat-card>
