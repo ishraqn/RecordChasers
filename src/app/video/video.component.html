@@ -1,15 +1,89 @@
+<mat-grid-list cols="4" rowHeight="8:1">
+  <!-- Video Player -->
+  <mat-grid-tile [colspan]="3" [rowspan]="12">
+    <mat-card class="video-card">
+      <img class="video" [src]="video?.thumbnailURL" alt="Video Thumbnail">
+      <div class="video-player">
+        <mat-icon style="margin-left: 15px;" fontIcon="play_arrow"></mat-icon>
+        <mat-icon fontIcon="fast_rewind"></mat-icon>
+        <mat-slider style="width: 80%;"><input matSliderThumb></mat-slider>
+        <mat-icon fontIcon="fast_forward"></mat-icon>
+        <mat-icon style="margin-right: 15px;" fontIcon="volume_up"></mat-icon>
+      </div>
+    </mat-card>
+  </mat-grid-tile>
 
-<div class="video-container">
-    <img [src]="video?.thumbnailURL" alt="Video Thumbnail" class="thumbnail">
-</div>
+  <!-- User Profile -->
+  <mat-grid-tile [colspan]="1" [rowspan]="4">
+    <mat-card class="profile-card">
+      <mat-card-header>Record uploaded by {{video?.author?.name}}</mat-card-header>
+      <button class="follow-button" mat-raised-button>Follow</button>
+    </mat-card>
+  </mat-grid-tile>
 
+  <!-- Suggestions -->
+  <mat-grid-tile [colspan]="1" [rowspan]="23">
+    <div class="suggestion-box">
+      <b style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 800; margin-bottom: 15px;">Suggestions</b>
+      <mat-card class="suggestion-card" *ngFor="let video of videos" (click)="openVideo(video)">
+        <img class="suggestion-video" [src]="video.thumbnailURL">
+        <div class="suggestion-title"><b>{{video.name}} </b><i>Views: {{video.views}}</i><i>By: {{video.author.name}}</i></div>
+      </mat-card>
+    </div>
+  </mat-grid-tile>
 
-<mat-card>
-    <mat-card-header class="video-title">{{ video?.name }}</mat-card-header>
-    <mat-card-content class="video-details">
-      <p>Uploaded by {{ video?.author?.name }}</p>
-      <p>{{ video?.description }}</p>
-      <p>Views: {{ video?.views }} | Likes: {{ video?.likes }} | Dislikes: {{ video?.dislikes }}</p>
+  <!-- Title -->
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-card class="title-card">
+      <mat-card-content>{{video?.name}}</mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <!-- Description -->
+  <mat-grid-tile [colspan]="2" [rowspan]="3">
+    <mat-card class="description-card">
+      <mat-card-header>Description</mat-card-header>
+      <mat-card-content>{{video?.description}}</mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <!-- Like Meter -->
+  <mat-grid-tile [colspan]="1" [rowspan]="2">
+    <mat-card class="likes-card">
+      <mat-card-content>
+        <div class="likes-thing"><b>Views:</b>{{video?.views}}</div>
+        <div class="likes-thing">          
+           <b style="display: flex; flex-direction: row;">
+            <button style="background-color: green; align-items: center; justify-content: center; display: flex;" (click)="like(video)">
+            <mat-icon fontIcon="thumb_up"></mat-icon>
+          </button>Likes:</b>{{video?.likes}}
+
+        </div>
+        <div class="likes-thing"><b style="display: flex; flex-direction: row;">
+          <button style="background-color: red; align-items: center; justify-content: center; display: flex;" (click)="dislike(video)">
+            <mat-icon fontIcon="thumb_down"></mat-icon>
+          </button>Dislikes:</b>{{video?.dislikes}}
+        </div>
       </mat-card-content>
-</mat-card>
+    </mat-card>
+  </mat-grid-tile>
+
+  <!-- Comments -->
+  <mat-grid-tile [colspan]="3" [rowspan]="12">
+    <div style=" width: 95%; height: 100%;">
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; border-bottom: 2px solid white; margin-bottom: 15px;">Comments</div>
+      <form style="display: flex; flex-direction: column; width: 100%; height: 200px; margin-bottom: 15px;" [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+        <mat-form-field style="height: 80%;" appearance="fill">
+          <mat-label>Add a comment</mat-label>
+          <input matInput formControlName="comment">
+        </mat-form-field>
+        <button style="width: 25%; height: 50px;" mat-raised-button color="primary">Submit</button>
+      </form>
   
+      <div style="border-bottom: 2px solid rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; margin-bottom: 15px;" *ngFor="let comment of video?.comments">
+        <h3>{{ comment.user.name }}</h3>
+        <p>{{ comment.comment }}</p>
+      </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

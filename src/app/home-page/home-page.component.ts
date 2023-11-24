@@ -16,6 +16,6 @@ export class HomePageComponent {
 
   openVideo(video : Record){
     this.recordService.selectedRecord = video;
-    this.router.navigateByUrl("video");
+    this.router.navigateByUrl('video');
   }
 }

@@ -1,9 +1,11 @@
 
 <div class="dashboard">
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('home')">CloutChasers</button>
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('upload')">Upload a Record</button>
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('profile')">User Profile</button>
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('search')">Search</button>
+  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('home')"><mat-icon fontIcon="home"></mat-icon>CloutChasers</button>
+  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('upload')"><mat-icon fontIcon="upload"></mat-icon>Upload a Record</button>
+  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('profile')"><mat-icon fontIcon="person"></mat-icon> User Profile</button>
+  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('search')"><mat-icon fontIcon="search"></mat-icon> Search</button>
 </div>
+
+
 
 <router-outlet></router-outlet>
