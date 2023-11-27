@@ -1,3 +1,70 @@
-<mat-card  *ngFor="let video of videos" (click)="openVideo(video)">
-    <img [src]="video?.thumbnailURL" alt="Video Thumbnail" class="thumbnail">
-</mat-card>
+<body>
+
+    <h2 style="text-align: center">Join The Record Breaking Fever</h2>
+
+
+    <br>
+
+    <ngb-carousel
+    #carousel
+    [interval]="1000"
+    [pauseOnHover]="true"
+    [pauseOnFocus]="true" 
+    (slide)="onSlide($event)"
+>
+        <ng-template ngbSlide *ngFor="let record of videos; let i = index">
+            <div class="carousel-caption">
+                <h3>My slide {{ i + 1 }} title</h3>
+            </div>
+            <a href="https://www.google.fr/?q=Number+{{ i + 1 }}" target="_blank" rel="nofollow noopener noreferrer">
+                <div class="picsum-img-wrapper">
+                    <img [src]="record.thumbnailURL" alt="My image {{ i + 1 }} description" />
+                </div>
+            </a>
+        </ng-template>
+</ngb-carousel>
+
+<!-- <ngb-carousel  #carousel [interval]="5000">
+    <ng-template ngbSlide>
+      <div style="background-color: black; height: 200px">
+        <h1>Graph 1</h1>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div style="background-color: black; height: 200px">
+        <h1>Graph 2</h1>
+      </div>
+    </ng-template>
+  </ngb-carousel> -->
+  
+    
+
+    <br>
+    <br>
+
+
+    <h2 style="text-align: center">Featured Videos</h2>
+    
+    <br>
+
+
+
+
+    <mat-grid-list cols = "4" rowHeight = "1:1">
+        <mat-grid-tile *ngFor="let record of videos">
+            <app-video-thumbail [record] = "record" ></app-video-thumbail>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+
+    <br>
+    
+    
+
+
+
+
+
+
+        
+    </body>

@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatSelectModule } from '@angular/material/select'
 import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +22,7 @@ import { VideoComponent } from './video/video.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
+import { VideoThumbailComponent } from './video-thumbail/video-thumbail.component';
 
 
 
@@ -34,7 +36,8 @@ import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
     UploadComponent,
     ProfileComponent,
     SearchComponent,
-    VideoComponent
+    VideoComponent,
+    VideoThumbailComponent
   ],
   imports: [
     MatButtonModule,
@@ -47,6 +50,7 @@ import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatInputModule,
+    NgbModule,
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatSelectModule,

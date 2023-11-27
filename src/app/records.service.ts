@@ -48,7 +48,72 @@ export class RecordsService {
         {comment : "bad at the game", user: this.users[3]}
       ],
       thumbnailURL: "assets/images/goop_eater.webp" 
+    },
+    {
+      name: "Fastest Goop eater in the wests", 
+      category: this.categories[0], 
+      published: new Date(), 
+      author: this.users[0], 
+      description: "I eat goop", 
+      views: 3454353, 
+      likes: 10,
+      dislikes: 26543,
+      comments: [
+        {comment : "worst record ever!", user: this.users[1]},
+        {comment : "this sucks!", user: this.users[2]},
+        {comment : "bad at the game", user: this.users[3]}
+      ],
+      thumbnailURL: "assets/images/goop_eater.webp" 
+    },
+    {
+      name: "Fastest Goop eater in the wests", 
+      category: this.categories[0], 
+      published: new Date(), 
+      author: this.users[0], 
+      description: "I eat goop", 
+      views: 3454353, 
+      likes: 10,
+      dislikes: 26543,
+      comments: [
+        {comment : "worst record ever!", user: this.users[1]},
+        {comment : "this sucks!", user: this.users[2]},
+        {comment : "bad at the game", user: this.users[3]}
+      ],
+      thumbnailURL: "assets/images/goop_eater.webp" 
+    },
+    {
+      name: "Fastest Goop eater in the wests", 
+      category: this.categories[0], 
+      published: new Date(), 
+      author: this.users[0], 
+      description: "I eat goop", 
+      views: 3454353, 
+      likes: 10,
+      dislikes: 26543,
+      comments: [
+        {comment : "worst record ever!", user: this.users[1]},
+        {comment : "this sucks!", user: this.users[2]},
+        {comment : "bad at the game", user: this.users[3]}
+      ],
+      thumbnailURL: "assets/images/goop_eater.webp" 
+    },
+    {
+      name: "Fastest Goop eater in the wests", 
+      category: this.categories[0], 
+      published: new Date(), 
+      author: this.users[0], 
+      description: "I eat goop", 
+      views: 3454353, 
+      likes: 10,
+      dislikes: 26543,
+      comments: [
+        {comment : "worst record ever!", user: this.users[1]},
+        {comment : "this sucks!", user: this.users[2]},
+        {comment : "bad at the game", user: this.users[3]}
+      ],
+      thumbnailURL: "assets/images/goop_eater.webp" 
     }
+
   ];
 
   selectedRecord: Record | undefined;
