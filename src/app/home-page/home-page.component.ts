@@ -11,7 +11,7 @@ import { NgbCarousel, NgbCarouselConfig, NgbSlideEvent, NgbSlideEventSource } fr
 })
 export class HomePageComponent {
   videos : Record[] = [];
-
+  
   paused = false;
     unpauseOnArrow = false;
     pauseOnIndicator = false;
@@ -40,4 +40,6 @@ export class HomePageComponent {
         //this.togglePaused();
     }
 }
+
+
 }

@@ -1,15 +1,76 @@
-h2{
-	text-decoration: underline;
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+
+/* Styles for the main title */
+h1 {
+  font-family: 'Permanent Marker', serif;
+  background-color: #29469C;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  text-align: right;
 }
 
-
-.picsum-img-wrapper{
-    display:flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+/* Styles for the Featured Videos section title */
+.Tagline h2 {
+  font-family: 'Bebas Neue', serif;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.popular{
-    background-color: black;
+.carousel-background {
+  background-color: #29469C;
+  padding: 20px 0; 
+  text-align: center; 
+}
+
+.custom-row {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-card {
+  background-color: white;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 50px auto; 
+  transition: transform 0.3s ease-in-out; 
+  width: calc(90% - 160px); 
+}
+
+.custom-card:hover {
+  transform: scale(1.05); 
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px; 
+  border-top-right-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    width: calc(100% - 40px); /* Adjust the width for small screens */
+    margin: 20px auto; 
+  }
+  .custom-row {
+    justify-content: center;
+  }
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Styles for the Featured section */
+.Featured {
+  background-color: white;
+  padding: 20px 0;
 }
 
