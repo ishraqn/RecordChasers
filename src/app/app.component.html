@@ -1,11 +1,14 @@
-
 <div class="dashboard">
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('home')"><mat-icon fontIcon="home"></mat-icon>CloutChasers</button>
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('upload')"><mat-icon fontIcon="upload"></mat-icon>Upload a Record</button>
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('profile')"><mat-icon fontIcon="person"></mat-icon> User Profile</button>
-  <button mat-raised-button color="primary" class="clout-chasers" (click)="redirect('search')"><mat-icon fontIcon="search"></mat-icon> Search</button>
+  <div class="logo">
+    <img src="assets/images/Logo.png" alt="Your Logo" class="logo-image" (click)="redirect('home')" />
+  </div>
+  <div class="menu-items">
+    <span (click)="redirect('upload')">Upload a Record</span>
+    <span (click)="redirect('profile')">User Profile</span>
+    <span (click)="redirect('search')">Search</span>
+  </div>
 </div>
 
-<div style="height: 80px;"></div>
+<div style="height: 80px"></div>
 
 <router-outlet></router-outlet>

@@ -1,0 +1,50 @@
+src
+├── app
+│   ├── app.component.html
+│   ├── app.component.scss
+│   ├── app.component.spec.ts
+│   ├── app.component.ts
+│   ├── app.module.ts
+│   ├── app-routing.module.ts
+│   ├── home-page
+│   │   ├── home-page.component.html
+│   │   ├── home-page.component.scss
+│   │   ├── home-page.component.spec.ts
+│   │   └── home-page.component.ts
+│   ├── profile
+│   │   ├── profile.component.html
+│   │   ├── profile.component.scss
+│   │   ├── profile.component.spec.ts
+│   │   └── profile.component.ts
+│   ├── records.service.spec.ts
+│   ├── records.service.ts
+│   ├── search
+│   │   ├── search.component.html
+│   │   ├── search.component.scss
+│   │   ├── search.component.spec.ts
+│   │   └── search.component.ts
+│   ├── upload
+│   │   ├── upload.component.html
+│   │   ├── upload.component.scss
+│   │   ├── upload.component.spec.ts
+│   │   └── upload.component.ts
+│   ├── video
+│   │   ├── video.component.html
+│   │   ├── video.component.scss
+│   │   ├── video.component.spec.ts
+│   │   └── video.component.ts
+│   └── video-thumbail
+│       ├── video-thumbail.component.html
+│       ├── video-thumbail.component.scss
+│       ├── video-thumbail.component.spec.ts
+│       └── video-thumbail.component.ts
+├── assets
+│   └── images
+│       ├── goop_eater.webp
+│       └── Logo.png
+├── favicon.ico
+├── index.html
+├── main.ts
+└── styles.scss
+
+9 directories, 38 files
