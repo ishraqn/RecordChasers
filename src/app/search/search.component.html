@@ -1,6 +1,13 @@
 <mat-grid-list cols="4" rowHeight="4:1">
     <mat-grid-tile [rowspan]="1" [colspan]="1">FiltersHeader</mat-grid-tile>
-    <mat-grid-tile [rowspan]="1" [colspan]="3">SearchBar</mat-grid-tile>
+    <mat-grid-tile [rowspan]="1" [colspan]="3">
+        <form style="width: 90%; ">
+            <mat-form-field style="width: 100%">
+              <mat-label>Search <mat-icon fontIcon="search"></mat-icon></mat-label>
+              <input style="width: 100%;" matInput placeholder="Enter a Record you want to see">
+            </mat-form-field>
+          </form>
+    </mat-grid-tile>
 
     <mat-grid-tile [rowspan]="1" [colspan]="1">
         <mat-form-field style="width: 95%;">
@@ -15,12 +22,14 @@
 
     <mat-grid-tile [rowspan]="2" [colspan]="1">
         <div class="category-circle">
+            <mat-icon fontIcon="directions_bike"></mat-icon>
+            <b>SPORTS</b>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="2" [colspan]="1">
+        <div class="category-circle">
             <mat-icon fontIcon="cookie"></mat-icon>
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile [rowspan]="2" [colspan]="1">
-        <div class="category-circle">
-            <mat-icon fontIcon="food"></mat-icon>
+            <b>FOOD</b>
         </div>
     </mat-grid-tile>
     <mat-grid-tile [rowspan]="2" [colspan]="1">
@@ -30,26 +39,26 @@
     </mat-grid-tile>
 
     <mat-grid-tile [rowspan]="1" [colspan]="1">
-        <mat-form-field style="width: 95%;">
+        <!-- <mat-form-field style="width: 95%;">
             <mat-label>Sort By</mat-label>
             <mat-select>
                 <mat-option value="date">Date</mat-option>
                 <mat-option value="alphabet">Alphabet</mat-option>
                 <mat-option value="user">User</mat-option>
             </mat-select>
-        </mat-form-field>
+        </mat-form-field> -->
     </mat-grid-tile>
 
 
     <mat-grid-tile [rowspan]="1" [colspan]="1">
-        <mat-form-field style="width: 95%;">
+        <!-- <mat-form-field style="width: 95%;">
             <mat-label>Sort By</mat-label>
             <mat-select>
                 <mat-option value="date">Date</mat-option>
                 <mat-option value="alphabet">Alphabet</mat-option>
                 <mat-option value="user">User</mat-option>
             </mat-select>
-        </mat-form-field>
+        </mat-form-field> -->
     </mat-grid-tile> 
 
     <mat-grid-tile [rowspan]="2" [colspan]="1">
@@ -72,11 +81,11 @@
 
 
     <mat-grid-tile [rowspan]="1" [colspan]="1">
-        <mat-form-field style="width: 95%;">
-            <mat-datepicker #picker></mat-datepicker>
+        <!-- <mat-form-field style="width: 95%;">
+            <mat-datepicker #picker2></mat-datepicker>
             <input matInput [matDatepicker]="picker" placeholder="Choose a date">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        </mat-form-field>
+        </mat-form-field> -->
     </mat-grid-tile>
 
     <mat-grid-tile [rowspan]="2" [colspan]="1">

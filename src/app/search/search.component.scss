@@ -6,8 +6,10 @@ mat-grid-tile{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    flex-direction: column;
+    width: 10vw;
+    height: 10vw;
+    font-size: 1vw;
     border-radius: 100%;
     border: 2px solid transparent;
     background-color: aliceblue;
