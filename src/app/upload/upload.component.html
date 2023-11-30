@@ -1,61 +1,57 @@
-
-
 <body>
-  <h2 style="font-size: 200%">Please fill out the details</h2>
 
-  <label style="font-size: 160%"> Select: </label>
-  <input type="text" name="Select" style="height: 30px" size="40px" />
-  <br />
-  <br />
-  <label style="font-size: 160%"> Title: </label>
-  <input
-    type="text"
-    name="Title"
-    placeholder="Enter your video title"
-    style="height: 30px"
-    size="40px"
-  />
-  <br />
-  <br />
-  <label style="font-size: 160%"></label>
-  <input
-    type="text"
-    name="Title"
-    placeholder="Enter your record category"
-    style="height: 30px"
-    size="40px"
-  />
-  <br />
-  <br />
-  <label style="font-size: 160%">Description: </label>
-  <input
-    type="text"
-    name="Title"
-    placeholder="Enter a brief description"
-    style="height: 150px"
-    size="40px"
-  />
-  <br />
-  <br />
-  <label style="font-size: 160%"> Rules: </label>
-  <input
-    type="text"
-    name="Title"
-    placeholder="Enter the rules"
-    style="height: 150px"
-    size="40px"
-  />
-
-  <button type="submit" class="submit-btn">Submit</button>
-
-  <div class="upload_box">
-    Upload your video here:
-    <input
-      type="file"
-      name="video"
-      id="upload_input"
-      accept="video/*"
-      required
-    />
+    <h1 style="text-align: center">UPLOAD PAGE</h1>
+    
+    <h2 style="font-size:200%">Please fill out the details</h2>
+    
+	<div class ="dropdown"> 
+        <label class="label_style">Select: </label>
+        <button class="dropbtn">Select from the following records</button>
+  <div class="dropdown-content">
+    <a href="#">Record 1</a>
+    <a href="#">Record 2</a>
+    <a href="#">Record 3</a>
   </div>
-</body>
+  </div>
+				
+	</div>
+        <br>
+        <br>
+		
+	<div class ="label_align"> 
+        <label class="label_style">
+                                        Title: </label>
+        <input type="text" name="Title" placeholder="Enter your video title" 
+                style="height:30px" size="40px">
+				
+		</div>
+        <br>
+        <br>
+		
+		<div class ="label_align"> 
+        <label class="label_style">Category:</label>
+        <input type="text" name="Category" placeholder="Enter your record category" 
+                style="height:30px" size="40px">
+		</div>
+        <br>
+        <br>
+		
+		<div class ="label_align"> 
+        <label class="label_style">Description: </label>
+        <textarea name="Description" class="textarea" placeholder="Enter a brief description"></textarea>
+		</div>		
+        <br>
+        <br>
+		
+		<div class ="label_align"> 
+        <label class="label_style">Rules: </label>
+        <textarea name="Rules" class="textarea" placeholder="Enter the rules"></textarea>
+		</div>
+		
+        <button type="submit" class="submit-btn">Submit</button>
+        
+        <div class="upload_box">Upload your video here:
+            <input type="file" name="video" id="upload_input" accept="video/*" required>
+        </div>
+        
+    </body>
