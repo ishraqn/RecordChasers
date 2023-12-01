@@ -112,6 +112,8 @@ mat-grid-tile {
 
 .suggestion-video{
     width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 .suggestion-title{

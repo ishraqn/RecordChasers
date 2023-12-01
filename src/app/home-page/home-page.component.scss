@@ -49,6 +49,8 @@ h1 {
 
 .card-img-top {
   width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
   height: auto;
   border-top-left-radius: 15px; 
   border-top-right-radius: 15px;
