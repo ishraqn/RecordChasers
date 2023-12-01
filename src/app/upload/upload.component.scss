@@ -9,14 +9,14 @@ body {
 
 label{
 	font-size: 160%;
-	width: 150px
+	width: 150px;
 }
 
 .submit-btn {
-			position: fixed;
-			top: 610px;
-			left: 1260px;
-            background-color:29469C ;
+			position: relative;
+			top: -75px;
+			left: 1300px;
+            background-color:#29469C ;
             color: #FFFFFF;
             padding: 10px 20px;
             border: none;
@@ -27,27 +27,36 @@ label{
             font-size: 16px;
             margin: 4px 2px;
             transition-duration: 0.4s;
+            width: 150px;
         }
 		
-.upload_box{
-			position: relative;
-			top: -550px;
-			left: 900px;
-			width: 30%;
-			height: 400px;
-			background-color: #FFFFFF; /* Set the background color */
-			color: black; /* Set the text color */
-			text-align: center; /* Center the text horizontally */
-			line-height: 200px; /* Center the text vertically */
-			font-size: 27px; /* Set the font size */
-			border: 4px dotted #000
 
+
+.upload_box{
+  position: relative;
+  top: -550px;
+  left: 1000px;
+  width: 30%;
+  height: 400px;
+  background-color: #ffffff; /* Set the background color */
+  color: black; /* Set the text color */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+  font-size: 27px; /* Set the font size */
+  border: 4px dotted #000
 }
 
 .upload_input{
-	position: absolute; 
+	position: relative;
 	display: block;
-	margin-bottom: 10px;
+  width: 100px;
+  top: 20px;
+  height: 50px;
+	margin-bottom: 20px;
+  font-family: 'Times New Roman';
+  font-size: 65%;
 }
 
 h1{
@@ -61,10 +70,12 @@ h2{
 
 
 .label_style{
+  position: relative;
 	font-size: 160%;
+  left: 30px;
 	color:white;
 	display: flex;
-	width: 150px !important;
+	width: 170px !important;
 	align-items: right;
 }
 
@@ -83,7 +94,7 @@ textarea{
 }
 		
 .textarea::placeholder {
-   font-family: 'Arial';
+   font-family: 'Bebas Neue';
 }
 		
 .dropdown-content a {
@@ -95,7 +106,7 @@ textarea{
 
 .dropbtn {
   background-color: #29469C;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -114,7 +125,7 @@ textarea{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  left: 450px;
+  left: 465px;
 }
 
 

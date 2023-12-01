@@ -1,5 +1,5 @@
-<mat-grid-list cols="4" rowHeight="4:1">
-    <mat-grid-tile [rowspan]="1" [colspan]="1">FiltersHeader</mat-grid-tile>
+<mat-grid-list style="font-family: ;" cols="4" rowHeight="4:1">
+    <mat-grid-tile [rowspan]="1" [colspan]="1"><b style="font-size: 1vw; color: white;">Filters</b></mat-grid-tile>
     <mat-grid-tile [rowspan]="1" [colspan]="3">
         <form style="width: 90%; ">
             <mat-form-field style="width: 100%">
@@ -22,54 +22,68 @@
 
     <mat-grid-tile [rowspan]="2" [colspan]="1">
         <div class="category-circle">
-            <mat-icon fontIcon="directions_bike"></mat-icon>
-            <b>SPORTS</b>
+            <mat-icon fontIcon="pets"></mat-icon>
+            <b>ANIMALS</b>
         </div>
     </mat-grid-tile>
+    
     <mat-grid-tile [rowspan]="2" [colspan]="1">
         <div class="category-circle">
-            <mat-icon fontIcon="cookie"></mat-icon>
-            <b>FOOD</b>
+            <mat-icon fontIcon="directions_car"></mat-icon>
+            <b>VEHICLES</b>
         </div>
     </mat-grid-tile>
+    
     <mat-grid-tile [rowspan]="2" [colspan]="1">
         <div class="category-circle">
-            <mat-icon fontIcon="food"></mat-icon>
+            <mat-icon fontIcon="business"></mat-icon>
+            <b>STRUCTURES</b>
         </div>
     </mat-grid-tile>
+    
 
     <mat-grid-tile [rowspan]="1" [colspan]="1">
-        <!-- <mat-form-field style="width: 95%;">
-            <mat-label>Sort By</mat-label>
+        <mat-form-field style="width: 95%;">
+            <mat-label>Filter</mat-label>
             <mat-select>
-                <mat-option value="date">Date</mat-option>
-                <mat-option value="alphabet">Alphabet</mat-option>
-                <mat-option value="user">User</mat-option>
+                <mat-option value="date">Age Restricted</mat-option>
+                <mat-option value="alphabet">Political</mat-option>
             </mat-select>
-        </mat-form-field> -->
+        </mat-form-field> 
     </mat-grid-tile>
 
 
     <mat-grid-tile [rowspan]="1" [colspan]="1">
-        <!-- <mat-form-field style="width: 95%;">
-            <mat-label>Sort By</mat-label>
+        <mat-form-field style="width: 95%;">
+            <mat-label>Filter</mat-label>
             <mat-select>
-                <mat-option value="date">Date</mat-option>
-                <mat-option value="alphabet">Alphabet</mat-option>
-                <mat-option value="user">User</mat-option>
+                <mat-option value="date">Age Restricted</mat-option>
+                <mat-option value="alphabet">Political</mat-option>
             </mat-select>
-        </mat-form-field> -->
+        </mat-form-field> 
     </mat-grid-tile> 
 
     <mat-grid-tile [rowspan]="2" [colspan]="1">
-        <div class="category-circle"></div>
+        <div class="category-circle">
+            <mat-icon fontIcon="explore"></mat-icon>
+            <b>JOURNEYS</b>
+        </div>
     </mat-grid-tile>
+    
     <mat-grid-tile [rowspan]="2" [colspan]="1">
-        <div class="category-circle"></div>
+        <div class="category-circle">
+            <mat-icon fontIcon="sports_esports"></mat-icon>
+            <b>GAMING</b>
+        </div>
     </mat-grid-tile>
+    
     <mat-grid-tile [rowspan]="2" [colspan]="1">
-        <div class="category-circle"></div>
+        <div class="category-circle">
+            <mat-icon fontIcon="museum"></mat-icon>
+            <b>OLDEST ARTIFACTS</b>
+        </div>
     </mat-grid-tile>
+    
 
     <mat-grid-tile [rowspan]="1" [colspan]="1">
         <mat-form-field style="width: 95%;">
@@ -80,31 +94,30 @@
     </mat-grid-tile>
 
 
-    <mat-grid-tile [rowspan]="1" [colspan]="1">
-        <!-- <mat-form-field style="width: 95%;">
-            <mat-datepicker #picker2></mat-datepicker>
-            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        </mat-form-field> -->
+    <mat-grid-tile [rowspan]="2" [colspan]="1">
+        <button mat-raised-button color="primary">SEARCH</button>
     </mat-grid-tile>
 
     <mat-grid-tile [rowspan]="2" [colspan]="1">
-        <div class="category-circle"></div>
+        <div class="category-circle">
+            <mat-icon fontIcon="sports_kabaddi"></mat-icon>
+            <b>SPORTS</b>
+        </div>
     </mat-grid-tile>
+    
+    
     <mat-grid-tile [rowspan]="2" [colspan]="1">
-        <div class="category-circle"></div>
+        <div class="category-circle">
+            <mat-icon fontIcon="wb_incandescent"></mat-icon>
+            <b>RARE</b>
+        </div>
     </mat-grid-tile>
+    
     <mat-grid-tile [rowspan]="2" [colspan]="1">
-        <div class="category-circle"></div>
-    </mat-grid-tile>
-
-    <mat-grid-tile [rowspan]="1" [colspan]="1">
-        <!-- <mat-form-field style="width: 95%;">
-            <mat-datepicker #picker></mat-datepicker>
-            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        </mat-form-field> -->
-    </mat-grid-tile>
-
+        <div class="category-circle">
+            <mat-icon fontIcon="rocket"></mat-icon>
+            <b>SPACE</b>
+        </div>
+    </mat-grid-tile>    
 
 </mat-grid-list>
