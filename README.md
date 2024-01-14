@@ -20,7 +20,12 @@ Our vision is to create a vibrant community for both casual browsers and dedicat
 
 ## Group Collaboration 
 
-This project was a collaborative effort by four students for COMP 3020 at The University of Manitoba, CA.
+This project was a collaborative effort by four students for COMP 3020 at The University of Manitoba, CA. The Contributors are as follows:
+
+- Ishraq Nazrul
+- Jared Rost
+- Krish Vikasbhai Patel
+- Maxim Omelchenko 
 
 ## Development 
 
