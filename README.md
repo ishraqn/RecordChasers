@@ -18,9 +18,13 @@ Our vision is to create a vibrant community for both casual browsers and dedicat
 - **User Profiles**: Create profiles to follow others and stay updated on new records.
 - **Diverse Content**: Content appealing to both serious enthusiasts and casual viewers.
 
-## Development
+## Group Collaboration 
 
-This project was built using Angular CLI version 15.1.6.
+This project was a collaborative effort by four students for COMP 3020 at The University of Manitoba, CA.
+
+## Development 
+
+This project was built using Angular CLI version 15.1.6. 
 
 ### Running the Development Server
 
